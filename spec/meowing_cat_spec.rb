@@ -23,3 +23,10 @@ describe "Cat" do
     expect { maru.meow }.to output(a_string_matching("meow!")).to_stdout
   end
 end
+class Cat
+  attr_accessor :name
+
+  def meow
+    puts "meow!"
+  end
+end
